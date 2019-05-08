@@ -1,0 +1,11 @@
+{
+    "name": "koolreport/cache",
+    "version":"1.1.0",
+    "description": "Use cache to make your report faster",
+    "keywords": ["PHP","php reprting tools","php reporting framework","mysql reporting tools","php cache"],
+    "homepage": "https://www.koolreport.com",
+    "type": "library",
+    "license": "https://www.koolreport.com/license#mit-license",
+    "require": {
+    }
+}
