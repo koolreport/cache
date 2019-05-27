@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file contains ApcCache class
+ *
+ * @author KoolPHP Inc (support@koolphp.net)
+ * @link https://www.koolphp.net
+ * @copyright KoolPHP Inc
+ * @license https://www.koolreport.com/license
+ */
 
 namespace koolreport\cache;
 use \koolreport\core\Utility;
@@ -19,6 +27,8 @@ trait ApcCache
                     {
                         $dataStore->meta($data[$name]["meta"]);
                         $dataStore->data($data[$name]["data"]);
+                        // This to avoid widget to initiate requestDataSending()
+                        $dataStore->setEnded(true);
                     }
                 }
                 return false;
