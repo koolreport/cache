@@ -8,8 +8,23 @@ go to your report at the same time, server may be overloaded.
 
 # Installation
 
-1. Download the package and unzip
-2. Copy `cache` folder into `koolreport\packages`
+## By downloading .zip file
+
+1. [Download](https://www.koolreport.com/packages/cache)
+2. Unzip the zip file
+3. Copy the folder `cache` into `koolreport` folder so that look like below
+
+```bash
+koolreport
+├── core
+├── cache
+```
+
+## By composer
+
+```
+composer require koolreport\cache
+```
 
 # Documentation
 
