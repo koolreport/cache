@@ -23,7 +23,7 @@ koolreport
 ## By composer
 
 ```
-composer require koolreport\cache
+composer require koolreport/cache
 ```
 
 # Documentation
