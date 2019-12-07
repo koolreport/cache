@@ -23,14 +23,14 @@ trait MemCache
             $settings = $this->cacheSettings();
         }
         $ttl = Utility::get($settings,"ttl",5*60);
-        $servers = Utility::get($servers,"servers");
+        $servers = Utility::get($settings,"servers");
         if($servers==null)
         {
             throw new \Exception("Please added servers");
         }
         
         $this->_memCache = new \Memcached();
-        foreach($servers as $host=>$post)
+        foreach($servers as $host=>$port)
         {
             $this->_memCache->addServer($host,$port);
         }

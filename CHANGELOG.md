@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.5.0 (new version)
+
+1. Fix the typos in the MemCache
+
 ## Version 1.2.0
 
 1. Change README
